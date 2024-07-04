@@ -1,0 +1,43 @@
+:root {
+    --color-primary: #FFFAFA;
+    --color-secondary: #323232;
+    --color-bg-whatsapp: #60D669;
+}
+
+:root {
+    --color-text-light: var(--color-primary);
+    --color-text-dark: var(--color-secondary);
+    
+    --color-bg-light: var(--color-primary);
+    --color-bg-dark: var(--color-secondary);
+
+    --color-border-light: var(--color-primary);
+    --color-border-dark: var(--color-secondary);
+
+    /* FONT */
+    --font-archivo-base: "Archivo", sans-serif;
+    --font-archivo-black: "Archivo Black", sans-serif;
+
+    /* space */
+    --padding-horizontal-desktop: 100px;
+    --padding-vertical-desktop: 70px;
+    --padding-horizontal-mobile: 20px;
+}
+
+.border-red {
+  border: 2px solid red;
+}
+
+.paragraph {
+  white-space: pre-line;
+}
+
+body {
+  font-family: var(--font-archivo-base);
+  color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
+}
+
+.bg-whatsapp {
+  background-color: var(--color-bg-whatsapp);
+}

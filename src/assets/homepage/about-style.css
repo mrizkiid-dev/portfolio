@@ -1,0 +1,84 @@
+section#about-me {
+    min-height: 100px;
+    background-color: var(--color-bg-dark);
+    font-family: "Archivo", sans-serif;
+    color: var(--color-text-light);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+section#about-me #left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#about-me #left h2{
+    font-family: var(--font-archivo-black);
+    font-size: 36px;
+}
+
+section#about-me #left p{
+    font-family: var(--font-archivo-base);
+    font-size: 20px;
+    padding-left: 20px;
+    max-width: 700px;
+    line-height: 1.2;
+}
+
+section#about-me #right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about-me #right img {
+    width: 270px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* 
+*   Responsive
+*/
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    section#about-me {
+        padding: 70px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section#about-me #left h2{
+        font-size: 25px;
+    }
+
+    section#about-me p.paragraph-mobile{
+        font-size: 15px;
+        max-width: 700px;
+        line-height: 1.2;
+    }
+
+    section#about-me #left p{
+        display: none;
+    }
+
+    section#about-me #right img {
+        width: 170px;
+        height: 250px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    section#about-me {
+        padding: 70px 100px;
+    }
+
+    section#about-me p.paragraph-mobile{
+        display: none;
+    }
+}

@@ -1,0 +1,137 @@
+@media screen and (max-width: 768px) {
+    section#hello {
+        height: 35svh;
+        gap: 5px;
+    }
+
+    section#hello .name {
+        font-size: 30px;
+    }
+
+    section#hello .description {
+        font-size: 12px;
+    }
+
+    section#hello .desc-mobile {
+        font-size: 16px;
+    }
+
+    section#hello .buttons {
+        gap: 6px;
+        margin-top: 20px;
+    }
+
+    section#hello .button {
+        gap: 6px;
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    /* .button {
+        gap: 6px;
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    } */
+
+    section#hello .button .icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    section#hello .button .icons-right {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section#hello {
+        height: 90svh;
+        gap: 10px;
+    }
+
+    section#hello .name {
+        font-size: 96px;
+    }
+
+    section#hello .description {
+        font-size: 36px;
+    }
+
+    section#hello .buttons {
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    section#hello .button {
+        gap: 10px;
+        width: 270px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    section#hello .button .icons {
+        width: 37px;
+        height: 37px;
+    }
+
+    section#hello .button .icons-right {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.font-light {
+    color: var(--color-text-light);
+}
+
+section#hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#hello .name {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-text-dark);
+}
+
+section#hello .description {
+    font-family: "Archivo", sans-serif;
+    color: var(--color-text-dark);
+}
+
+section#hello p {
+    margin: 0px;
+}
+
+section#hello .buttons {
+    display: flex;
+}
+
+
+section#hello .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    /* text */
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+section#hello .button .icons {
+}
+
+section#hello .button .icons-right {
+}
