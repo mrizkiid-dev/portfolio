@@ -31,6 +31,21 @@ section#contact .button-contact .button  {
     cursor: pointer;
 }
 
+section#contact .button-contact .email-button {
+    position: relative;
+}
+
+section#contact .button-contact span.notification-copy {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+    padding: 2px 5px;
+    overflow: visible;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
 @media screen and (max-width: 768px) {
     section#contact {
         padding: 30px var(--padding-horizontal-mobile);

@@ -70,6 +70,34 @@ section#projects .skills .skill {
     border-radius: 3px;
 } 
 
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.images img {
+    border-radius: 10px;
+}
+
+.button-project {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+} 
+
+.button-project span{
+    padding: 15px 30px;
+    color: var(--color-text-light);
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
 .flutter {
     background-color: #0476D0;
 }

@@ -4,14 +4,14 @@
         <p class="name">Muhammad Rizki</p>
         <p class="description">"I create beautiful things on the web and mobile phone"</p>
         <div class="buttons">
-            <Button :is-border="true" @on-tap="onTap">
+            <Button :is-border="true" @on-tap="onTapGithub">
                 <div class="button">
                     <Icon icon="mdi:github" class="icons"/>
                     <span>Github</span>
                 </div>
             </Button>
 
-            <Button :is-dark="true" @on-tap="onTap">
+            <Button :is-dark="true" @on-tap="onTapResume">
                 <div class="button font-light">
                     <Icon icon="pepicons-pop:cv" class="icons icons-right"/>
                     <span>Resume</span>
@@ -104,38 +104,50 @@
             <ProjectPopUp title="CardTodo" @on-tap="onClosePopUp">
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        I learn More about flutter and dart at how passing by address and value work espessialy in list.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        I learn how widget and widget tree in flutter
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        I learn more about bloc and inherited widget, how stream works and behaviour.
+                        I learn that how important inversion of control rather than send instance class by class on class tree.
+                        I use get it as inversion of control
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        I implemented clean architecture after finished intensive pairing programy by refactory.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        Learn more about figma and design best practice.
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Learn and practice with version control system GIT and Github.
                     </p>
                 </DetailProjectPopUp>
                 <div class="images">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="isMobile ? '75px' : '150px'" :height="isMobile ? '75px' : '150px'" alt="">
+                    <img src="@/assets/img/card_todo/a.webp" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/card_todo/1.webp" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/card_todo/2.webp" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/card_todo/3.webp" :height="widthAndHeight" alt="">
+                </div>
+                <div class="button-project">
+                    <Button :is-dark="true" @click="onTapSourceCodeCardTodo">
+                        <span>Source Code</span>
+                    </Button>
+
+                    <Button :is-dark="true" @click="onTapFigmaCardTodo">
+                        <span>Figma Design</span>
+                    </Button>
                 </div>
             </ProjectPopUp>
         </Teleport>
@@ -144,30 +156,58 @@
             <ProjectPopUp title="Refactory" @on-tap="onClosePopUp">
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        I learn more about team work with real case study.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        Contribute in sprint and daily stand up meeting, 
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        Collaborating with cross-functional teams including designers, product
+                        managers, and other developers to create high-quality products
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        Build interactive and responsive ui
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        Working on a several project as front-end with vue js and react js
                     </p>
                 </DetailProjectPopUp>
-                <div class="images">
+                <DetailProjectPopUp>
+                    <p>
+                        Working on a several project as mobile developer with flutter <br>
+                        - i help several team to make mobile app with flutter <br>
+                        - i join team to make mobile app for hanoman, hanoman is app for internal company to track sales and stock outlet.<br>
+                        - contribute with team that make sev-2 with flutter, sev-2 is internal app for project management in refactory.
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Help to contribute team on project alladin mall <br>
+                        - in this project i help team to make android apps with kotlin <br>
+                        - i also help construct ui on seller website with react js for alladin mall <br>
+                        - I also help to fix bug in edge function on back-end with golang. 
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Create End Point using code igniter <br>
+                        In project HANOMAN i also help team to construct ui also make an api with codeigniter 3
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        On project SEV-2(internal software) team decide to migrate from phabricator PHP to supabase for project managament. Is it because supabase use technology called PostgREST and for custom complex manipulation query we need to make RPC. I help with team back-end to make posrgre function for supabase RPC.
+                    </p>
+                </DetailProjectPopUp>
+                <!-- <div class="images">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
@@ -176,7 +216,8 @@
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="isMobile ? '75px' : '150px'" :height="isMobile ? '75px' : '150px'" alt="">
-                </div>
+                </div> -->
+                
             </ProjectPopUp>
         </Teleport>
 
@@ -184,39 +225,50 @@
             <ProjectPopUp title="Project 88" @on-tap="onClosePopUp">
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        This project is to make a e-commerce for my personal project. E-commerce website need framework that support server side rendering, therefore I decide to use nuxt js.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        To improve speed of development, i use TailwindCss for css framework.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        In this project i use supabase for back-end. I learn more with manipulation supabase query and manipulation PostgreSQL query for supabase rpc.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        Before developing website and back-end. First of all i need to make design. I choose Figma to make big picture of how my project will look like and what a feature i should make.
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                        I use Typescript rather than full of Javascript in my nuxt program for type safety.
                     </p>
                 </DetailProjectPopUp>
-                <div class="images">
+                <!-- <div class="images">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
                     <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
-                    <img src="@/assets/img/profile-img.webp" :width="isMobile ? '75px' : '150px'" :height="isMobile ? '75px' : '150px'" alt="">
+                </div> -->
+                <div class="button-project">
+                    <Button :is-dark="true" @click="onTapSourceCodeProject88">
+                        <span>Source Code</span>
+                    </Button>
+
+                    <Button :is-dark="true" @click="onTapFigmaProject88">
+                        <span>Figma Design</span>
+                    </Button>
+
+                    <Button :is-dark="true" @click="onTapLiveProject88">
+                        <span>Live Website</span>
+                    </Button>
                 </div>
+                
             </ProjectPopUp>
         </Teleport>
 
@@ -225,10 +277,10 @@
             <div class="content-grid">
                 <div class="content" @click="onCardTodoPopUp">
                     <div class="img-container">
-                        <img src="@/assets/img/profile-img.webp" width="210px" height="210px" alt="profile-img" >
+                        <img src="@/assets/img/card_todo/a.webp" width="210px" height="210px" alt="profile-img" >
                     </div>
                     <div>
-                        <h3 class="description-project">Card Todo</h3>
+                        <h3 class="description-project">CardTodo</h3>
                         <p>CardTodo is a self-project that i do for learning mobile developer (flutter) more</p>
                         <div class="skills">
                             <div class="skill flutter">Flutter</div>
@@ -241,7 +293,7 @@
                 </div>
                 <div class="content" @click="onRefactoryPopUp">
                     <div class="img-container">
-                        <img src="@/assets/img/profile-img.webp" width="210px" height="210px" alt="profile-img" >
+                        <img src="@/assets/img/logo-refactory.webp" width="210px" height="210px" alt="profile-img" >
                     </div>
                     <div>
                         <h3 class="description-project">Refactory</h3>
@@ -259,7 +311,7 @@
                 </div>
                 <div class="content" @click="onProject88PopUp">
                     <div class="img-container">
-                        <img src="@/assets/img/profile-img.webp" width="210px" height="210px" alt="profile-img" >
+                        <img src="@/assets/img/logo-project88.webp" width="210px" height="210px" alt="profile-img" >
                     </div>
                     <div>
                         <h3 class="description-project">Project 88</h3>
@@ -280,24 +332,27 @@
         <h2>Contact</h2>
         <p>“Software not only needs to meet the criteria but also has to be visually good. I believe that my ability to design and implement user-friendly interfaces will enhance your product's user experience, ensuring that your applications not only function seamlessly but also look beautiful.”</p>
         <div class="button-contact">
-            <Button @on-tap="onTap">
+            <Button @on-tap="onTapWhatsapp">
                 <div class="button bg-whatsapp font-light">
                     <Icon icon="logos:whatsapp-icon" class="icons"/>
                     <span>chat me</span>
                 </div>
             </Button>
 
-            <Button :is-dark="true" @on-tap="onTap">
-                <div class="button font-light">
-                    <Icon icon="ic:outline-email" class="icons"/>
-                    <span>mail me</span>
-                </div>
-            </Button>
+            <div class="email-button">
+                <span v-show="isCopyShow" class="notification-copy">email copy to clipboard</span>
+                <Button :is-dark="true" @on-tap="onTapEmail">
+                    <div class="button font-light">
+                        <Icon icon="ic:outline-email" class="icons"/>
+                        <span>mail me</span>
+                    </div>
+                </Button>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>PORTFOLIO - 2024</p>
+        <p>PORTFOLIO CREATED WITH VUE JS - 2024</p>
     </footer>
 
 </template>
@@ -307,11 +362,39 @@ import Button from '@/components/Button.vue'
 import ProjectPopUp from '@/components/ProjectPopUp.vue'
 import DetailProjectPopUp from '@/components/project-pop-up/DetailProjectPopUp.vue'
 import { useScreen } from '@/composables/useScreen'
+import { linkNewTab } from '@/utils/helper'
 import { Icon } from '@iconify/vue'
 import { computed, ref } from 'vue'
 
-const onTap = () => {
-    // isCardTodoPopUp.value = true
+const onTapGithub = () => {
+    linkNewTab('https://github.com/mrizkiid-dev')
+}
+
+const onTapResume = () => {
+    linkNewTab('https://drive.google.com/file/d/1PbIdMexP9ebSkbITisCjsBqlW9qHSArH/view?usp=sharing')
+}
+
+const onTapWhatsapp = () => {
+    linkNewTab('https://wa.me/6282119777614')
+}
+
+const isCopyShow = ref<boolean>(false)
+let timeId: number | null = null
+const onTapEmail = async() => {
+    navigator.clipboard.writeText('muhammad.rizki.surel.dev@gmail.com').then(() => {
+        isCopyShow.value = true
+    }).catch(err => {
+        console.error('Could not copy text: ', err);
+    });
+    
+    if (timeId) {
+        window.clearTimeout(timeId);
+    }
+
+    timeId = setTimeout(() => {
+        isCopyShow.value = false
+        timeId = null
+    }, 2000)
 }
 
 const isCardTodoPopUp = ref<boolean>(false)
@@ -328,6 +411,26 @@ const onCardTodoPopUp = () => {
     isCardTodoPopUp.value = true
 }
 
+const onTapSourceCodeCardTodo = () => {
+    linkNewTab('https://github.com/mrizkiid-dev/card_todo')
+}
+
+const onTapFigmaCardTodo = () => {
+    linkNewTab('https://www.figma.com/design/l5eh7u9zxyoMd8SsHU1K93/Card-Todo?node-id=0-1&t=u3hOTArZ0XQm2ycJ-1')
+}
+
+const onTapSourceCodeProject88 = () => {
+    linkNewTab('https://github.com/mrizkiid-dev/project-88/tree/staging')
+}
+
+const onTapFigmaProject88 = () => {
+    linkNewTab('https://www.figma.com/design/wUzRqivoYlXvCxnsNlca7M/belajar?node-id=7-2&t=vbZMRdzFzUUxl7AF-0')
+}
+
+const onTapLiveProject88 = () => {
+    linkNewTab('https://project88.rizkidev.my.id/')
+}
+
 const onRefactoryPopUp = () => {
     isRefactoryPopUp.value = true
 }
@@ -338,7 +441,7 @@ const onProject88PopUp = () => {
 
 const { isMobile } = useScreen()
 const widthAndHeight = computed(() => {
-    return isMobile.value ? '75px' : '150px'
+    return isMobile.value ? '120px' : '180px'
 })
 
 </script>
@@ -357,19 +460,6 @@ footer {
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.1em;
-}
-
-.images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-.images img {
-    border-radius: 10px;
 }
 
 </style>

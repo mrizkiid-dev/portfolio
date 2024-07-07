@@ -43,6 +43,7 @@ const style = {
         align-items: center;
         padding: 0;
         background-color: var(--color-bg-light);
+        cursor: pointer;
     }
 
     .button-dark {
