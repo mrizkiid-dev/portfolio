@@ -6,12 +6,6 @@ section#projects {
     margin: 50px 0;
 }
 
-/* section#projects h2 {
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-} */
-
 section#projects .content-grid {
     display: grid;
     /* grid-template-columns: repeat(3,1fr); */
@@ -30,6 +24,8 @@ section#projects .content-grid .content {
     color: var(--color-text-light);
     border-radius: 15px;
     cursor: pointer;
+
+    letter-spacing: 0.05em;
 }
 
 section#projects .content img {
@@ -54,6 +50,60 @@ section#projects .content h3 {
 section#projects .content p {
     font-size: 16px;
     margin-top: 10px;
+    height: 100px;
+}
+
+section#projects .content .skills {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 100px;
+    margin-top: 30px;
+}
+
+section#projects .skills .skill {
+    margin: 0;
+    padding: 3px 6px;
+    border-radius: 3px;
+} 
+
+.flutter {
+    background-color: #0476D0;
+}
+
+.figma {
+    background: linear-gradient(45deg, #f24e1e, #ff7262, #a259ff, #1abcfe, #0acf83);
+}
+
+.android-studio {
+    background: linear-gradient(45deg, #E24462, #B125EA);
+}
+
+.vue-js {
+    background-color: #42b883;
+}
+
+.react {
+    background-color: #61dafb;
+}
+
+.supabase {
+    background-color: #166944;
+}
+
+.postgresql {
+    background-color: #0064a5;
+}
+
+.code-igniter {
+    background-color: #DD4814;
+}
+
+.tailwind {
+    background-color: #3490dc;
 }
 
 

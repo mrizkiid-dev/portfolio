@@ -229,7 +229,14 @@
                     </div>
                     <div>
                         <h3 class="description-project">Card Todo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae ea possimus doloremque dicta ullam laboriosam distinctio nemo earum quod, tenetur sed ducimus amet quaerat fugiat ipsam? Est, fugit eos?</p>
+                        <p>CardTodo is a self-project that i do for learning mobile developer (flutter) more</p>
+                        <div class="skills">
+                            <div class="skill flutter">Flutter</div>
+                            <div class="skill flutter">Dart</div>
+                            <div class="skill flutter">FLutter-Bloc</div>
+                            <div class="skill flutter">Hive</div>
+                            <div class="skill figma">Figma</div>
+                        </div>
                     </div>
                 </div>
                 <div class="content" @click="onRefactoryPopUp">
@@ -238,7 +245,16 @@
                     </div>
                     <div>
                         <h3 class="description-project">Refactory</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae ea possimus doloremque dicta ullam laboriosam distinctio nemo earum quod, tenetur sed ducimus amet quaerat fugiat ipsam? Est, fugit eos?</p>
+                        <p>I join Intensive Pairing (IP) at Refactory start on may. In this program i learn and do internship as software engineer junior.</p>
+                        <div class="skills">
+                            <div class="skill flutter">Flutter</div>
+                            <div class="skill android-studio">Kotlin</div>
+                            <div class="skill vue-js">Nuxt JS</div>
+                            <div class="skill react">React</div>
+                            <div class="skill supabase">Supabase</div>
+                            <div class="skill postgresql">PostgreSQL</div>
+                            <div class="skill code-igniter">CodeIgniter3</div>
+                        </div>
                     </div>
                 </div>
                 <div class="content" @click="onProject88PopUp">
@@ -247,7 +263,13 @@
                     </div>
                     <div>
                         <h3 class="description-project">Project 88</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae ea possimus doloremque dicta ullam laboriosam distinctio nemo earum quod, tenetur sed ducimus amet quaerat fugiat ipsam? Est, fugit eos?</p>
+                        <p>After Intensive Pairing Program. i realise my mobile developer skill doesn't enough. I need to deep learn front-end stack</p>
+                        <div class="skills">
+                            <div class="skill vue-js">Nuxt JS</div>
+                            <div class="skill supabase">Supabase</div>
+                            <div class="skill tailwind">Tailwind Css</div>
+                            <div class="skill postgresql">PostgreSQL</div>
+                        </div>
                     </div>
                 </div>
             </div>
