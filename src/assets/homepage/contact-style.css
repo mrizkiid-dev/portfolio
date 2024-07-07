@@ -12,6 +12,7 @@ section#contact {
 section#contact p {
     font-weight: 600;
     margin-bottom: 10px;
+    max-width: 600px;
 }
 
 section#contact .button-contact {
@@ -75,7 +76,7 @@ section#contact .button-contact .button  {
     }
 
     section#contact {
-        padding: 30px var(--padding-horizontal-desktop);
+        padding: 60px var(--padding-horizontal-desktop);
     }
 
     section#contact h2{

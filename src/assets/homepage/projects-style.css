@@ -29,6 +29,7 @@ section#projects .content-grid .content {
     background-color: var(--color-bg-dark);
     color: var(--color-text-light);
     border-radius: 15px;
+    cursor: pointer;
 }
 
 section#projects .content img {

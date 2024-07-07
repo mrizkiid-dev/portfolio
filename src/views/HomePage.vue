@@ -100,10 +100,130 @@
     </section>
 
     <section id="projects">
+        <Teleport v-if="isCardTodoPopUp" to="#pop-up">
+            <ProjectPopUp title="CardTodo" @on-tap="onClosePopUp">
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <div class="images">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="isMobile ? '75px' : '150px'" :height="isMobile ? '75px' : '150px'" alt="">
+                </div>
+            </ProjectPopUp>
+        </Teleport>
+
+        <Teleport v-if="isRefactoryPopUp" to="#pop-up">
+            <ProjectPopUp title="Refactory" @on-tap="onClosePopUp">
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <div class="images">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="isMobile ? '75px' : '150px'" :height="isMobile ? '75px' : '150px'" alt="">
+                </div>
+            </ProjectPopUp>
+        </Teleport>
+
+        <Teleport v-if="isProject88PopUp" to="#pop-up">
+            <ProjectPopUp title="Project 88" @on-tap="onClosePopUp">
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <DetailProjectPopUp>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo. Aut provident aliquid voluptatibus, iusto praesentium maxime voluptate assumenda deserunt reprehenderit soluta eum accusantium esse qui sit quasi ipsa obcaecati!
+                    </p>
+                </DetailProjectPopUp>
+                <div class="images">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="widthAndHeight" :height="widthAndHeight" alt="">
+                    <img src="@/assets/img/profile-img.webp" :width="isMobile ? '75px' : '150px'" :height="isMobile ? '75px' : '150px'" alt="">
+                </div>
+            </ProjectPopUp>
+        </Teleport>
+
         <h2>"What i have done so far"</h2>
         <div class="container-grid">
             <div class="content-grid">
-                <div class="content">
+                <div class="content" @click="onCardTodoPopUp">
                     <div class="img-container">
                         <img src="@/assets/img/profile-img.webp" width="210px" height="210px" alt="profile-img" >
                     </div>
@@ -112,7 +232,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae ea possimus doloremque dicta ullam laboriosam distinctio nemo earum quod, tenetur sed ducimus amet quaerat fugiat ipsam? Est, fugit eos?</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content" @click="onRefactoryPopUp">
                     <div class="img-container">
                         <img src="@/assets/img/profile-img.webp" width="210px" height="210px" alt="profile-img" >
                     </div>
@@ -121,7 +241,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae ea possimus doloremque dicta ullam laboriosam distinctio nemo earum quod, tenetur sed ducimus amet quaerat fugiat ipsam? Est, fugit eos?</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content" @click="onProject88PopUp">
                     <div class="img-container">
                         <img src="@/assets/img/profile-img.webp" width="210px" height="210px" alt="profile-img" >
                     </div>
@@ -136,7 +256,7 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>“Application not only needs to meet the criteria but also has to be visually good. I believe that my ability to design and implement user-friendly interfaces will enhance your product's user experience, ensuring that your applications not only function seamlessly but also look beautiful.”</p>
+        <p>“Software not only needs to meet the criteria but also has to be visually good. I believe that my ability to design and implement user-friendly interfaces will enhance your product's user experience, ensuring that your applications not only function seamlessly but also look beautiful.”</p>
         <div class="button-contact">
             <Button @on-tap="onTap">
                 <div class="button bg-whatsapp font-light">
@@ -155,18 +275,49 @@
     </section>
 
     <footer>
-        <p>PORTOFOLIO - 2024</p>
+        <p>PORTFOLIO - 2024</p>
     </footer>
 
 </template>
 
 <script setup lang="ts">
 import Button from '@/components/Button.vue'
-import { Icon } from '@iconify/vue';
+import ProjectPopUp from '@/components/ProjectPopUp.vue'
+import DetailProjectPopUp from '@/components/project-pop-up/DetailProjectPopUp.vue'
+import { useScreen } from '@/composables/useScreen'
+import { Icon } from '@iconify/vue'
+import { computed, ref } from 'vue'
 
 const onTap = () => {
-    console.log('ontap');
+    // isCardTodoPopUp.value = true
 }
+
+const isCardTodoPopUp = ref<boolean>(false)
+const isRefactoryPopUp = ref<boolean>(false)
+const isProject88PopUp = ref<boolean>(false)
+
+const onClosePopUp = () => {
+    isCardTodoPopUp.value = false
+    isRefactoryPopUp.value = false
+    isProject88PopUp.value = false
+}
+
+const onCardTodoPopUp = () => {
+    isCardTodoPopUp.value = true
+}
+
+const onRefactoryPopUp = () => {
+    isRefactoryPopUp.value = true
+}
+
+const onProject88PopUp = () => {
+    isProject88PopUp.value = true
+}
+
+const { isMobile } = useScreen()
+const widthAndHeight = computed(() => {
+    return isMobile.value ? '75px' : '150px'
+})
 
 </script>
 
@@ -184,6 +335,19 @@ footer {
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.1em;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.images img {
+    border-radius: 10px;
 }
 
 </style>

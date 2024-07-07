@@ -17,6 +17,7 @@ section#about-me #left {
 section#about-me #left h2{
     font-family: var(--font-archivo-black);
     font-size: 36px;
+    /* text-align: ; */
 }
 
 section#about-me #left p{
@@ -80,5 +81,9 @@ section#about-me #right img {
 
     section#about-me p.paragraph-mobile{
         display: none;
+    }
+
+    section#about-me #left h2{
+        text-align: left;
     }
 }
