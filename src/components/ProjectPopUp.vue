@@ -129,7 +129,7 @@ const onClosePopUp = () => {
     @media screen and (max-width: 786px) {
         .container {
             width: 90svw;
-            min-height: 50svh;
+            height: 60svh;
         }
 
         .header h3 {
@@ -139,6 +139,10 @@ const onClosePopUp = () => {
 
         .content {
             font-size: 14px;
+        }
+
+        .bg-pop-up {
+            padding-bottom: 60px;
         }
     }
     
