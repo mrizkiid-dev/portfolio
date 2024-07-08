@@ -340,7 +340,7 @@
             </Button>
 
             <div class="email-button">
-                <span v-show="isCopyShow" class="notification-copy md:hidden">email copy to clipboard</span>
+                <span v-show="isCopyShow && !isMobile" class="notification-copy md:hidden">email copy to clipboard</span>
                 <Button :is-dark="true" @on-tap="onTapEmail">
                     <div class="button font-light">
                         <Icon icon="ic:outline-email" class="icons"/>
