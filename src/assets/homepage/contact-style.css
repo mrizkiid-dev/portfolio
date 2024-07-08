@@ -80,10 +80,6 @@ section#contact .button-contact span.notification-copy {
     section#contact .button-contact {
         gap: 10px;
     }
-
-    section#contact .button-contact span.notification-copy {
-        visibility: hidden;
-    }
 }
 
 @media screen and (min-width: 768px) {

@@ -381,7 +381,7 @@ const onTapWhatsapp = () => {
 const isCopyShow = ref<boolean>(false)
 let timeId: number | null = null
 const onTapEmail = async() => {
-    navigator.clipboard.writeText('muhammad.rizki.surel.dev@gmail.com').then(() => {
+    navigator.clipboard.writeText('muhammad.rizki.surel@gmail.com').then(() => {
         isCopyShow.value = true
     }).catch(err => {
         console.error('Could not copy text: ', err);
