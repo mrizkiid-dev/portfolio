@@ -1,8 +1,8 @@
 section#about-me {
     min-height: 100px;
-    background-color: var(--color-bg-dark);
+    /* background-color: var(--color-bg-light); */
     font-family: "Archivo", sans-serif;
-    color: var(--color-text-light);
+    color: var(--color-text-dark);
 
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@ section#about-me #right img {
 /* Mobile */
 @media screen and (max-width: 768px) {
     section#about-me {
-        padding: 70px 20px;
+        padding: 30px 20px;
         flex-direction: column;
         gap: 20px;
     }
@@ -76,7 +76,7 @@ section#about-me #right img {
 /* Desktop */
 @media screen and (min-width: 769px) {
     section#about-me {
-        padding: 70px 100px;
+        padding: 140px 100px;
     }
 
     section#about-me p.paragraph-mobile{

@@ -1,4 +1,6 @@
 :root {
+    /* --color-primary: #FFFAFA;
+    --color-secondary: #323232; */
     --color-primary: #FFFAFA;
     --color-secondary: #323232;
 }
@@ -12,6 +14,18 @@
 
     --color-border-light: var(--color-primary);
     --color-border-dark: var(--color-secondary);
+
+    --color-bg-whatsapp: #60D669;
+    --color-bg-pop-up: #32323280;
+
+    /* --color-text-light: var(--color-secondary);
+    --color-text-dark: var(--color-primary);
+    
+    --color-bg-light: var(--color-secondary);
+    --color-bg-dark: var(--color-pr);
+
+    --color-border-light: var(--color-primary);
+    --color-border-dark: var(--color-secondary); */
 
     --color-bg-whatsapp: #60D669;
     --color-bg-pop-up: #32323280;
@@ -38,6 +52,8 @@
 body {
   font-family: var(--font-archivo-base);
   color: var(--color-secondary);
+  overflow-x: hidden;
+  /* background-image: url("@/assets/img/bg/bg-white-paper.png"); */
   /* background-color: var(--color-secondary); */
 }
 

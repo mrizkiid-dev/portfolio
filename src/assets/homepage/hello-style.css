@@ -48,7 +48,7 @@
 
 @media screen and (min-width: 768px) {
     section#hello {
-        height: 90svh;
+        height: 85svh;
         gap: 10px;
     }
 
@@ -92,6 +92,7 @@ section#hello {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border-bottom: 2px solid var(--color-border-dark); */
 }
 
 section#hello .name {

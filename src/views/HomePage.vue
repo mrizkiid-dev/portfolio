@@ -20,6 +20,21 @@
         </div>
     </section>
 
+    <div class="running-text">
+        <!-- <p class="marquee">
+            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
+        </p>
+        <p class="marquee marquee2">
+            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
+        </p> -->
+        <p class="marquee">
+            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+        </p>
+        <p class="marquee marquee2">
+            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+        </p>
+    </div>
+
     <section id="about-me">
         <div id="left">
             <h2>About me .</h2>
@@ -328,8 +343,12 @@
         </div>
     </section>
 
+    <div class="gradient-transition">
+
+    </div>
+
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>" 👋 let's get connected! "</h2>
         <p>“Software not only needs to meet the criteria but also has to be visually good. I believe that my ability to design and implement user-friendly interfaces will enhance your product's user experience, ensuring that your applications not only function seamlessly but also look beautiful.”</p>
         <div class="button-contact">
             <Button @on-tap="onTapWhatsapp">
@@ -382,11 +401,11 @@ const isCopyShow = ref<boolean>(false)
 let timeId: number | null = null
 const onTapEmail = async() => {
     navigator.clipboard.writeText('muhammad.rizki.surel@gmail.com').then(() => {
-        isCopyShow.value = true
-    }).catch(err => {
-        console.error('Could not copy text: ', err);
-    });
-    
+            isCopyShow.value = true
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+        
     if (timeId) {
         window.clearTimeout(timeId);
     }
@@ -395,6 +414,10 @@ const onTapEmail = async() => {
         isCopyShow.value = false
         timeId = null
     }, 2000)
+    
+    if (isMobile) {
+        window.open("mailto:muhammad.rizki.surel@gmail.com","_self")
+    }
 }
 
 const isCardTodoPopUp = ref<boolean>(false)
@@ -452,6 +475,7 @@ const widthAndHeight = computed(() => {
 @import '@/assets/homepage/skills-style.css';
 @import '@/assets/homepage/projects-style.css';
 @import '@/assets/homepage/contact-style.css';
+@import '@/assets/homepage/running-text.css';
 
 footer {
     background-color: var(--color-bg-dark);
@@ -460,6 +484,12 @@ footer {
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.1em;
+}
+
+.gradient-transition {
+    height: 50px;
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 </style>
