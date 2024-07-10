@@ -1,4 +1,7 @@
 <template>
+    <Teleport v-if="isLoadingShow" to="#pop-up">
+        <Loading />
+    </Teleport>
     <section id="hello" class="">
         <p class="description desc-mobile">Hello, I am</p>
         <p class="name">Muhammad Rizki</p>
@@ -20,18 +23,22 @@
         </div>
     </section>
 
-    <div class="running-text">
-        <!-- <p class="marquee">
-            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
-        </p>
-        <p class="marquee marquee2">
-            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
-        </p> -->
+    <div v-if="!isMobile" class="running-text">
         <p class="marquee">
             <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
         </p>
         <p class="marquee marquee2">
             <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+        </p>
+    </div>
+    <div v-else class="running-text">
+        <p class="marquee-mobile">
+            <span v-if="!isMobile">Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+            <span v-else>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
+        </p>
+        <p class="marquee-mobile marquee2-mobile">
+            <span v-if="!isMobile">Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+            <span v-else>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
         </p>
     </div>
 
@@ -378,12 +385,21 @@
 
 <script setup lang="ts">
 import Button from '@/components/Button.vue'
+import Loading from '@/components/Loading.vue'
 import ProjectPopUp from '@/components/ProjectPopUp.vue'
 import DetailProjectPopUp from '@/components/project-pop-up/DetailProjectPopUp.vue'
 import { useScreen } from '@/composables/useScreen'
 import { linkNewTab } from '@/utils/helper'
 import { Icon } from '@iconify/vue'
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+
+const isLoadingShow = ref<boolean>(true)
+onMounted(() => {
+    isLoadingShow.value = true
+    setTimeout(() => {
+        isLoadingShow.value = false
+    }, 5000);
+})
 
 const onTapGithub = () => {
     linkNewTab('https://github.com/mrizkiid-dev')
