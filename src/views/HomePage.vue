@@ -33,12 +33,10 @@
     </div>
     <div v-else class="running-text">
         <p class="marquee-mobile">
-            <span v-if="!isMobile">Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
-            <span v-else>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
+            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
         </p>
         <p class="marquee-mobile marquee2-mobile">
-            <span v-if="!isMobile">Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
-            <span v-else>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻&nbsp;</span>
+            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
         </p>
     </div>
 
