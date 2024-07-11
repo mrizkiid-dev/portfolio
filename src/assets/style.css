@@ -30,6 +30,9 @@
     --color-bg-whatsapp: #60D669;
     --color-bg-pop-up: #32323280;
 
+    --color-bg: #F9F5F2;
+    --color-bg-contact: #FCEEE3;
+
     /* FONT */
     --font-archivo-base: "Archivo", sans-serif;
     --font-archivo-black: "Archivo Black", sans-serif;
@@ -38,6 +41,7 @@
     --padding-horizontal-desktop: 100px;
     --padding-vertical-desktop: 70px;
     --padding-horizontal-mobile: 20px;
+
 
 }
 
@@ -54,7 +58,7 @@ body {
   color: var(--color-secondary);
   overflow-x: hidden;
   /* background-image: url("@/assets/img/bg/bg-white-paper.png"); */
-  /* background-color: var(--color-secondary); */
+  background-color: var(--color-bg);
 }
 
 .bg-whatsapp {

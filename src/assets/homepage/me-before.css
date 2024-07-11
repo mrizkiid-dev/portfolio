@@ -1,0 +1,56 @@
+section#me-before {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px;
+}
+
+section#me-before span {
+    color: var(--color-secondary);
+    letter-spacing: 0.05em;
+}
+
+section#me-before span.icon-arrow {
+    position: absolute;
+    /* padding-right: 40px; */
+    right: 0;
+    margin-bottom: -5px;
+}
+
+section#me-before button {
+    padding: 25px 0;
+    border-radius: 10px;
+    font-family: var(--font-archivo-black);
+    background-color: #ffc567;
+    border: 2px solid var(--color-secondary);
+    filter: drop-shadow(7px 7px var(--color-secondary));
+    animation: button-me-about 2s infinite;
+}
+
+@keyframes button-me-about {
+    0%   { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@media screen and (max-width: 786px) {
+    section#me-before button {
+        width: 300px;
+        font-size: 16px;
+    }
+
+    section#me-before span.icon-arrow {
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 786px) {
+    section#me-before button {
+        width: 600px;
+        font-size: 25px;
+    }
+
+    section#me-before span.icon-arrow {
+        padding-right: 40px;
+    }
+}

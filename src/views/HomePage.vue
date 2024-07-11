@@ -346,31 +346,43 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
 
-    <div class="gradient-transition">
+    <!-- For future feature -->
+    <!-- <section id="me-before">
+        <button class="bg-gradient" @click="onTapGallery">
+            <span>see what i was before</span>
+            <span class="icon-arrow">
+                <Icon icon="el:arrow-right" :width="widthIcon" :height="widthIcon"/>
+            </span>
+        </button>
+    </section> -->
 
-    </div>
+    <!-- <div class="gradient-transition" /> -->
+    <!-- <svg v-show="!isMobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#323232" fill-opacity="1" d="M0,192L20,186.7C40,181,80,171,120,154.7C160,139,200,117,240,138.7C280,160,320,224,360,218.7C400,213,440,139,480,128C520,117,560,171,600,170.7C640,171,680,117,720,96C760,75,800,85,840,101.3C880,117,920,139,960,160C1000,181,1040,203,1080,192C1120,181,1160,139,1200,144C1240,149,1280,203,1320,208C1360,213,1400,171,1420,149.3L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+    <svg v-show="isMobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#323232" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,234.7C640,213,800,139,960,117.3C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#323232" fill-opacity="1" d="M0,32L40,32C80,32,160,32,240,53.3C320,75,400,117,480,133.3C560,149,640,139,720,122.7C800,107,880,85,960,90.7C1040,96,1120,128,1200,128C1280,128,1360,96,1400,80L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
 
     <section id="contact">
         <h2>" 👋 let's get connected! "</h2>
         <p>“Software not only needs to meet the criteria but also has to be visually good. I believe that my ability to design and implement user-friendly interfaces will enhance your product's user experience, ensuring that your applications not only function seamlessly but also look beautiful.”</p>
         <div class="button-contact">
-            <Button @on-tap="onTapWhatsapp">
+            <button @click="onTapWhatsapp">
                 <div class="button bg-whatsapp font-light">
                     <Icon icon="logos:whatsapp-icon" class="icons"/>
-                    <span>chat me</span>
+                    <span class="text-whatsapp">chat me</span>
                 </div>
-            </Button>
+            </button>
 
             <div class="email-button">
-                <span v-show="isCopyShow && !isMobile" class="notification-copy md:hidden">email copy to clipboard</span>
-                <Button :is-dark="true" @on-tap="onTapEmail">
+                <span v-show="isCopyShow && !isMobile" class="notification-copy md:hidden">email copied</span>
+                <button @click="onTapEmail">
                     <div class="button font-light">
                         <Icon icon="ic:outline-email" class="icons"/>
                         <span>mail me</span>
                     </div>
-                </Button>
+                </button>
             </div>
         </div>
     </section>
@@ -390,6 +402,9 @@ import { useScreen } from '@/composables/useScreen'
 import { linkNewTab } from '@/utils/helper'
 import { Icon } from '@iconify/vue'
 import { computed, onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const isLoadingShow = ref<boolean>(true)
 onMounted(() => {
@@ -481,6 +496,15 @@ const widthAndHeight = computed(() => {
     return isMobile.value ? '120px' : '180px'
 })
 
+// section me-about
+const widthIcon = computed(() => {
+    return isMobile.value ? '20px' : '40px'
+})
+
+const onTapGallery = () => {
+    router.push({ path : "/gallery" })
+}
+
 </script>
 
 <style scoped>
@@ -490,11 +514,12 @@ const widthAndHeight = computed(() => {
 @import '@/assets/homepage/projects-style.css';
 @import '@/assets/homepage/contact-style.css';
 @import '@/assets/homepage/running-text.css';
+@import '@/assets/homepage/me-before.css';
 
 footer {
-    background-color: var(--color-bg-dark);
+    background-color: #ffc567;
     padding: 13px 0;
-    color: var(--color-text-light);
+    color: var(--color-text-dark);
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -503,7 +528,33 @@ footer {
 .gradient-transition {
     height: 50px;
     background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
 }
+
+.wave-container {  
+  height: 40vh;
+  background-color: #f9f5f2;
+  position: relative;
+}
+
+.wave-container::before {   
+  content: "";
+  width: 100%;
+  height: 168px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 30vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 22L33 19C82 13 133 14 200 29C267 44 333 67 400 70C467 74 533 59 600 40C667 22 733 0 800 0C867 0 933 22 1000 29C1067 37 1133 29 1167 26L1200 22V134H1167C1133 134 1067 134 1000 134C933 134 867 134 800 134C733 134 667 134 600 134C533 134 467 134 400 134C333 134 267 134 200 134C133 134 67 134 33 134H0V22.332Z' fill='%23fceee3'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {    
+    height: 84px
+  }  
+}
+
 
 </style>
