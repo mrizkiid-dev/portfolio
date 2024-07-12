@@ -419,7 +419,7 @@ const onTapGithub = () => {
 }
 
 const onTapResume = () => {
-    linkNewTab('https://drive.google.com/file/d/1PbIdMexP9ebSkbITisCjsBqlW9qHSArH/view?usp=sharing')
+    linkNewTab('https://drive.google.com/file/d/1Ugelrv_iy125gbhaIkDnZWMNDjR7wwM-/view?usp=sharing')
 }
 
 const onTapWhatsapp = () => {
