@@ -38,11 +38,18 @@ section#about-me #right {
 }
 
 section#about-me #right img {
+    /* position: absolute; */
     width: 270px;
     height: 370px;
     object-fit: cover;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid var(--color-border-dark);
+    box-shadow: 10px 10px;
 }
+
 
 /* 
 *   Responsive

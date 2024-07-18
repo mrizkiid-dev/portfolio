@@ -55,7 +55,7 @@
             </p>
         </div>
 
-        <div id="right">
+        <div id="right" >
             <img src="@/assets/img/profile-img.webp" alt="profile-img">
         </div>
 
