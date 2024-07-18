@@ -1,5 +1,8 @@
 section#about-me {
     min-height: 100px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: var(--color-bg-light); */
     font-family: "Archivo", sans-serif;
     color: var(--color-text-dark);
