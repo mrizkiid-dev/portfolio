@@ -25,18 +25,18 @@
 
     <div v-if="!isMobile" class="running-text">
         <p class="marquee">
-            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+            <span>Software Dev  🧑‍💻  Software Dev  🧑‍💻  Software Dev  🧑‍💻 Software Dev  🧑‍💻 Software Dev  🧑‍💻&nbsp;</span>
         </p>
         <p class="marquee marquee2">
-            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+            <span>Software Dev  🧑‍💻  Software Dev  🧑‍💻  Software Dev  🧑‍💻 Software Dev  🧑‍💻 Software Dev  🧑‍💻&nbsp;</span>
         </p>
     </div>
     <div v-else class="running-text">
         <p class="marquee-mobile">
-            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+            <span>Software Dev  🧑‍💻  Software Dev  🧑‍💻  Software Dev  🧑‍💻 Software Dev  🧑‍💻 Software Dev  🧑‍💻&nbsp;</span>
         </p>
         <p class="marquee-mobile marquee2-mobile">
-            <span>Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻  Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻 Front-end Dev  🧑‍💻&nbsp;</span>
+            <span>Software Dev  🧑‍💻  Software Dev  🧑‍💻  Software Dev  🧑‍💻 Software Dev  🧑‍💻 Software Dev  🧑‍💻&nbsp;</span>
         </p>
     </div>
 
@@ -44,14 +44,14 @@
         <div id="left">
             <h2>About me .</h2>
             <p class="paragraph paragraph-desktop">
-                Hello, my name is Muhammad Rizki. I am a front-end developer and a graphic designer.
-                My passion for beautiful user interfaces led me to pursue a career in front-end development.
+                Hello, my name is Muhammad Rizki. I am a Software developer and a graphic designer.
+                My passion for beautiful user interfaces led me to pursue a career in Software development.
                 I have worked on several projects, both independently and as part in software house.
                 This includes participating in daily stand-up meetings, sprints, discussions,
                 and problem-solving within a software engineering context.
                 Through these experiences, I have learned how the software development life cycle works
                 and how design can enhance the marketability of an application.
-                These experiences have deepened my love for my work as a front-end developer.
+                These experiences have deepened my love for my work as a Software developer.
             </p>
         </div>
 
@@ -60,14 +60,14 @@
         </div>
 
         <p class="paragraph paragraph-mobile">
-                Hello, my name is Muhammad Rizki. I am a front-end developer and a graphic designer.
-                My passion for beautiful user interfaces led me to pursue a career in front-end development.
+                Hello, my name is Muhammad Rizki. I am a Software developer and a graphic designer.
+                My passion for beautiful user interfaces led me to pursue a career in Software development.
                 I have worked on several projects, both independently and as part in software house.
                 This includes participating in daily stand-up meetings, sprints, discussions,
                 and problem-solving within a software engineering context.
                 Through these experiences, I have learned how the software development life cycle works
                 and how design can enhance the marketability of an application.
-                These experiences have deepened my love for my work as a front-end developer.
+                These experiences have deepened my love for my work as a Software developer.
             </p>
     </section>
 
@@ -197,7 +197,7 @@
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
                     <p>
-                        Working on a several project as front-end with vue js and react js
+                        Working on a several project as Software with vue js and react js
                     </p>
                 </DetailProjectPopUp>
                 <DetailProjectPopUp>
@@ -335,7 +335,7 @@
                     </div>
                     <div>
                         <h3 class="description-project">Project 88</h3>
-                        <p>After Intensive Pairing Program. i realise my mobile developer skill doesn't enough. I need to deep learn front-end stack</p>
+                        <p>After Intensive Pairing Program. i realise my mobile developer skill doesn't enough. I need to deep learn Software</p>
                         <div class="skills">
                             <div class="skill vue-js">Nuxt JS</div>
                             <div class="skill supabase">Supabase</div>
@@ -419,7 +419,7 @@ const onTapGithub = () => {
 }
 
 const onTapResume = () => {
-    linkNewTab('https://drive.google.com/file/d/1Ugelrv_iy125gbhaIkDnZWMNDjR7wwM-/view?usp=sharing')
+    linkNewTab('https://drive.google.com/file/d/1PmIK6uiuJ_LFtNZrQLY54Z-x3nx3MQX9/view?usp=sharing')
 }
 
 const onTapWhatsapp = () => {
