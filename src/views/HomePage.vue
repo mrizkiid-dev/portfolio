@@ -88,6 +88,10 @@
                     <p>Nuxt</p>
                 </div>
                 <div class="content">
+                    <Icon icon="logos:laravel" class="icon"/>
+                    <p>Laravel</p>
+                </div>
+                <div class="content">
                     <Icon icon="devicon:tailwindcss" class="icon"/>
                     <p>Tailwind</p>
                 </div>
@@ -111,10 +115,10 @@
                     <Icon icon="logos:figma" class="icon"/>
                     <p>Figma</p>
                 </div>
-                <div class="content">
+                <!-- <div class="content">
                     <Icon icon="devicon:photoshop" class="icon"/>
                     <p>Photoshop</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -341,6 +345,8 @@
                             <div class="skill supabase">Supabase</div>
                             <div class="skill tailwind">Tailwind Css</div>
                             <div class="skill postgresql">PostgreSQL</div>
+                            <div class="skill code-igniter">Laravel</div>
+                            <div class="skill flutter">Flutter</div>
                         </div>
                     </div>
                 </div>
