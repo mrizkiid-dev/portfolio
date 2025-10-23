@@ -1,0 +1,42 @@
+# Simple workflow for deploying a static Vue.js site to GitHub Pages
+name: Deploy Vue.js to GitHub Pages
+
+# Controls when the action will run
+# This triggers the workflow on push events to the 'main' branch
+on:
+  push:
+    branches: [ 'main' ] # Change this to your default branch if it's not 'main'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build-and-deploy"
+  build-and-deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # 1. Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Sets up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Use a Node.js version that matches your project
+
+      # 3. Installs dependencies
+      - name: Install dependencies
+        run: npm install # Or 'yarn install' if you use yarn
+
+      # 4. Builds the Vue.js app
+      - name: Build
+        run: npm run build # Or 'yarn build'
+
+      # 5. Deploys the built 'dist' folder to the 'gh-pages' branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # The folder your build process outputs
